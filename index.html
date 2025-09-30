@@ -1,91 +1,166 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoBiH - Kontakt</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="infobih_ikonica.png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #003B77;
-            color: white;
-            padding: 20px 30px;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-        header img {
-            height: 60px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8em;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-        }
-        main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            text-align: center;
-        }
-        a {
-            color: #3f51b5;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        p {
-            margin-top: 20px;
-            line-height: 1.6;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #f4f4f9;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoBiH - Kontakt</title>
+  <link rel="icon" type="image/png" href="infobih_ikonica.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #003B77;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    a {
+      color: #3f51b5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #f4f4f9;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Carousel */
+    h2 {
+      margin-bottom: 20px;
+      color: #003B77;
+    }
+    .carousel {
+      width: 100%;
+      max-width: 1000px;
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-track {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .card {
+      flex: 0 0 180px;
+      margin: 0 10px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="infobih_ikonica.png" alt="InfoBiH Logo">
-        <h1>InfoBiH - Kontakt</h1>
-    </header>
-    <main>
-        <div class="container">
-            <p><b>Za bilo kakva pitanja ili povratne informacije u vezi InfoBiH mobilne aplikacije, kontaktirajte me putem emaila:</b></p>
-            <p><a href="mailto:founder.infobih@gmail.com">founder.infobih@gmail.com</a></p>
-            <p>Ova web stranica služi kao jednostavna kontakt stranica za InfoBiH, aplikaciju za praćenje vijesti u Bosni i Hercegovini. Korisnici mogu pratiti lokalne vijesti i jednostavno pristupiti relevantnim sadržajima kroz aplikaciju.</p>
-        </div>
-    </main>
-    <footer>
-        &copy; 2025 InfoBiH. Sva prava zadržana.
-    </footer>
+  <header>
+    <img src="infobih_ikonica.png" alt="InfoBiH Logo">
+    <h1>InfoBiH - Kontakt</h1>
+  </header>
+  <main>
+    <div class="container">
+      <p><b>Za bilo kakva pitanja ili povratne informacije u vezi InfoBiH mobilne aplikacije, kontaktirajte me putem emaila:</b></p>
+      <p><a href="mailto:founder.infobih@gmail.com">founder.infobih@gmail.com</a></p>
+      <p>Ova web stranica služi kao jednostavna kontakt stranica za InfoBiH, aplikaciju za praćenje vijesti u Bosni i Hercegovini. Korisnici mogu pratiti lokalne vijesti i jednostavno pristupiti relevantnim sadržajima kroz aplikaciju.</p>
+    </div>
+
+    <!-- Naslov za izvore -->
+    <h2>Izvori vijesti:</h2>
+
+    <!-- Carousel sa izvorima -->
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="track">
+        <div class="card">Klix.ba</div>
+        <div class="card">Avaz.ba</div>
+        <div class="card">Crna Hronika</div>
+        <div class="card">Mondo.ba</div>
+        <div class="card">Fokus.ba</div>
+        <div class="card">Vijesti.ba</div>
+        <div class="card">Nezavisne novine</div>
+        <div class="card">Radio Sarajevo</div>
+        <div class="card">RTV BPK Goražde</div>
+        <div class="card">Tuzlanski.ba</div>
+        <div class="card">Haber.ba</div>
+        <div class="card">Hercegovina.info</div>
+        <div class="card">Bajtbox</div>
+        <div class="card">Fojnica.net</div>
+        <div class="card">Visoko.ba</div>
+        <div class="card">NTV.ba</div>
+        <div class="card">Sport Centar</div>
+        <div class="card">BL Portal</div>
+        <div class="card">Biznis.ba</div>
+        <div class="card">Arena Sport BiH</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 InfoBiH. Sva prava zadržana.
+  </footer>
+
+  <script>
+    const track = document.getElementById('track');
+    let scrollAmount = 0;
+
+    function scrollCarousel() {
+      scrollAmount += 1; // brzina scrollanja (1px po frame-u)
+      if (scrollAmount >= track.scrollWidth) {
+        scrollAmount = 0; // reset kada dođemo do kraja
+      }
+      track.style.transform = `translateX(-${scrollAmount}px)`;
+      requestAnimationFrame(scrollCarousel);
+    }
+
+    scrollCarousel();
+  </script>
 </body>
 </html>
