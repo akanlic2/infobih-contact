@@ -45,16 +45,24 @@ main {
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       max-width: 600px;
-      text-align: center;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      text-align: justify;
+      text-justify: inter-word;
       margin-bottom: 40px;
 }
-    
-a {
-      color: #3f51b5;
-      text-decoration: none;
-      font-weight: bold;
+
+.container a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 16px auto 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #3f51b5;
 }
-    
+
+   
 a:hover {
       text-decoration: underline;
 }
@@ -104,4 +112,51 @@ h2 {
     
 .card:hover {
       transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+
+  main {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 18px;  
+    margin-bottom: 24px;
+    max-width: 100%;
+    font-size: 0.85rem;  
+    line-height: 1.5;
+  }
+
+  header {
+    padding: 14px 16px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  header img {
+    height: 48px; 
+  }
+
+  header h1 {
+    position: static;          
+    transform: none;           
+    text-align: center;
+    font-size: 1.2rem;        
+    line-height: 1.2;
+  }
+
+  .container a {
+    word-break: break-word;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  .card {
+    flex: 0 0 140px;  
+    padding: 14px;    
+    margin: 0 8px;    
+  }
 }
